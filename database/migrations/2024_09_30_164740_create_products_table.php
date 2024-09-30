@@ -16,6 +16,7 @@ return new class extends Migration
             $table->foreignId('user_id')->constrained();
             $table->foreignId('category_id')->constrained();
             $table->string('name');
+            $table->string('brand');
             $table->unsignedInteger('price');
             $table->decimal('weight',10, 2);
             $table->text('description');
